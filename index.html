@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MarketPulse AI | Financial News Intelligence</title>
+    <meta
+      name="description"
+      content="MarketPulse AI is a portfolio project that turns market news into ranked articles, narrative clusters, ticker exposure maps, and price-context signals."
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MarketPulse AI home">
+        <span class="brand-mark" aria-hidden="true">MP</span>
+        <span>MarketPulse AI</span>
+      </a>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#product">Product</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Financial news intelligence portfolio project</p>
+          <h1 id="hero-title">MarketPulse AI</h1>
+          <p class="hero-text">
+            A work-in-progress market intelligence dashboard that ranks financial news, detects
+            developing narratives, maps ticker exposure, and links stories to price context.
+          </p>
+          <div class="hero-actions" aria-label="Project links">
+            <a class="button primary" href="https://github.com/lucasdsandoval30/marketpulse-ai-portfolio" target="_blank" rel="noreferrer">View source</a>
+            <a class="button secondary" href="#engineering">Engineering notes</a>
+          </div>
+        </div>
+
+        <div class="terminal-panel" aria-label="MarketPulse dashboard preview">
+          <div class="terminal-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="dashboard-preview">
+            <div class="preview-column wide">
+              <div class="preview-kicker">Top Developing Narrative</div>
+              <h2>AI chip demand and foundry capacity pressure</h2>
+              <p>
+                Evidence-weighted cluster built from ranked articles, ticker exposure, source quality,
+                recency, and duplicate filtering.
+              </p>
+              <div class="metric-row">
+                <span><strong>82</strong> impact</span>
+                <span><strong>71</strong> confidence</span>
+                <span><strong>6</strong> unique articles</span>
+              </div>
+              <div class="timeline">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span></span>
+                <span class="active"></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="preview-column">
+              <div class="preview-kicker">Ticker Exposure</div>
+              <ul class="ticker-list" aria-label="Example ticker exposure list">
+                <li><span>TSM</span><b>Direct</b></li>
+                <li><span>NVDA</span><b>Secondary</b></li>
+                <li><span>AMD</span><b>Peer</b></li>
+                <li><span>SMH</span><b>ETF</b></li>
+              </ul>
+            </div>
+            <div class="preview-column full">
+              <div class="preview-kicker">Noise Filtering</div>
+              <div class="dedupe-line">
+                <span>11 syndicated rows</span>
+                <strong>1 evidence item</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="status-strip" aria-label="Project status">
+        <article>
+          <span>Stage</span>
+          <strong>Prototype</strong>
+        </article>
+        <article>
+          <span>Stack</span>
+          <strong>Python · SQLite · React</strong>
+        </article>
+        <article>
+          <span>Focus</span>
+          <strong>Signal extraction</strong>
+        </article>
+        <article>
+          <span>Disclosure</span>
+          <strong>Not financial advice</strong>
+        </article>
+      </section>
+
+      <section class="section" id="product" aria-labelledby="product-title">
+        <div class="section-heading">
+          <p class="eyebrow">Product</p>
+          <h2 id="product-title">Built to explain why a market story matters</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Ranked article intelligence</h3>
+            <p>
+              Scores news with recency, source quality, market exposure, novelty, sentiment intensity,
+              and connected narrative importance.
+            </p>
+          </article>
+          <article>
+            <h3>Narrative clustering</h3>
+            <p>
+              Groups related articles into developing market stories using local storage, embeddings,
+              cluster scoring, and evidence-aware summaries.
+            </p>
+          </article>
+          <article>
+            <h3>Ticker exposure mapping</h3>
+            <p>
+              Separates direct tickers, second-order tickers, and sector ETFs so the user can inspect
+              likely market read-throughs.
+            </p>
+          </article>
+          <article>
+            <h3>Noise reduction</h3>
+            <p>
+              Collapses syndicated duplicate headlines so repeated domains do not inflate narrative
+              volume, source diversity, or ranking confidence.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="engineering" aria-labelledby="engineering-title">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering</p>
+          <h2 id="engineering-title">A practical system for messy financial news</h2>
+        </div>
+        <div class="system-list">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>Ingestion and normalization</h3>
+              <p>Source adapters collect articles, extract tickers/entities, normalize metadata, and store evidence in SQLite.</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Ranking and clustering</h3>
+              <p>Local rankers score impact while the narrative engine clusters related stories and filters duplicate evidence.</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>LLM summaries with guardrails</h3>
+              <p>Structured prompts produce JSON summaries, ticker exposure reasoning, limitations, and narrative context.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section roadmap" id="roadmap" aria-labelledby="roadmap-title">
+        <div class="section-heading">
+          <p class="eyebrow">Roadmap</p>
+          <h2 id="roadmap-title">What is still in progress</h2>
+        </div>
+        <div class="roadmap-grid">
+          <article>
+            <h3>Stronger source quality model</h3>
+            <p>Differentiate wires, primary filings, syndicated mirrors, blogs, and low-signal repost networks.</p>
+          </article>
+          <article>
+            <h3>Sharper narrative conviction</h3>
+            <p>Add a base-case market read with explicit conviction instead of hiding behind neutral wording.</p>
+          </article>
+          <article>
+            <h3>Deployment polish</h3>
+            <p>Package the API, frontend, scheduler, and data refresh path for a reliable public demo.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>MarketPulse AI is an unfinished portfolio prototype. It is for product and engineering demonstration only.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>
