@@ -6,7 +6,7 @@
     <title>MarketPulse AI | Financial News Intelligence</title>
     <meta
       name="description"
-      content="MarketPulse AI is a portfolio project that turns market news into ranked articles, narrative clusters, ticker exposure maps, and price-context signals."
+      content="MarketPulse AI is a student portfolio project exploring market news APIs, article ranking, narrative grouping, and AI summaries."
     >
     <link rel="stylesheet" href="./styles.css">
   </head>
@@ -26,11 +26,11 @@
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Financial news intelligence portfolio project</p>
+          <p class="eyebrow">Student AI and market news project</p>
           <h1 id="hero-title">MarketPulse AI</h1>
           <p class="hero-text">
-            A work-in-progress market intelligence dashboard that ranks financial news, detects
-            developing narratives, maps ticker exposure, and links stories to price context.
+            An early project where I am learning how to collect market news, rank articles,
+            group related stories, and use AI summaries to make the information easier to inspect.
           </p>
           <div class="hero-actions" aria-label="Project links">
             <a class="button primary" href="https://github.com/lucasdsandoval30/marketpulse-ai-portfolio" target="_blank" rel="noreferrer">View source</a>
@@ -46,11 +46,11 @@
           </div>
           <div class="dashboard-preview">
             <div class="preview-column wide">
-              <div class="preview-kicker">Top Developing Narrative</div>
+              <div class="preview-kicker">Example narrative</div>
               <h2>AI chip demand and foundry capacity pressure</h2>
               <p>
-                Evidence-weighted cluster built from ranked articles, ticker exposure, source quality,
-                recency, and duplicate filtering.
+                A sample cluster showing how the project connects ranked articles, ticker exposure,
+                source quality, recency, and duplicate filtering.
               </p>
               <div class="metric-row">
                 <span><strong>82</strong> impact</span>
@@ -96,7 +96,7 @@
         </article>
         <article>
           <span>Focus</span>
-          <strong>Signal extraction</strong>
+          <strong>Learning by building</strong>
         </article>
         <article>
           <span>Disclosure</span>
@@ -107,35 +107,35 @@
       <section class="section" id="product" aria-labelledby="product-title">
         <div class="section-heading">
           <p class="eyebrow">Product</p>
-          <h2 id="product-title">Built to explain why a market story matters</h2>
+          <h2 id="product-title">Built to practice working with real market news data</h2>
         </div>
         <div class="feature-grid">
           <article>
             <h3>Ranked article intelligence</h3>
             <p>
-              Scores news with recency, source quality, market exposure, novelty, sentiment intensity,
-              and connected narrative importance.
+              Scores articles using recency, source quality, market exposure, novelty, sentiment,
+              and how closely they connect to larger market stories.
             </p>
           </article>
           <article>
             <h3>Narrative clustering</h3>
             <p>
-              Groups related articles into developing market stories using local storage, embeddings,
-              cluster scoring, and evidence-aware summaries.
+              Groups related articles into market stories using local storage, clustering logic,
+              scoring, and summaries.
             </p>
           </article>
           <article>
             <h3>Ticker exposure mapping</h3>
             <p>
-              Separates direct tickers, second-order tickers, and sector ETFs so the user can inspect
-              likely market read-throughs.
+              Separates direct tickers, possible secondary tickers, and sector ETFs so a user can inspect
+              how a story might connect to different parts of the market.
             </p>
           </article>
           <article>
             <h3>Noise reduction</h3>
             <p>
-              Collapses syndicated duplicate headlines so repeated domains do not inflate narrative
-              volume, source diversity, or ranking confidence.
+              Reduces duplicate headlines so repeated syndicated articles do not make a story look
+              more important than it is.
             </p>
           </article>
         </div>
@@ -144,28 +144,28 @@
       <section class="section split" id="engineering" aria-labelledby="engineering-title">
         <div class="section-heading">
           <p class="eyebrow">Engineering</p>
-          <h2 id="engineering-title">A practical system for messy financial news</h2>
+          <h2 id="engineering-title">A practical system for learning with messy financial news</h2>
         </div>
         <div class="system-list">
           <article>
             <span>01</span>
             <div>
               <h3>Ingestion and normalization</h3>
-              <p>Source adapters collect articles, extract tickers/entities, normalize metadata, and store evidence in SQLite.</p>
+              <p>Source adapters collect articles, extract tickers and entities, normalize metadata, and store evidence in SQLite.</p>
             </div>
           </article>
           <article>
             <span>02</span>
             <div>
               <h3>Ranking and clustering</h3>
-              <p>Local rankers score impact while the narrative engine clusters related stories and filters duplicate evidence.</p>
+              <p>Local rankers score article impact while the narrative logic groups related stories and filters duplicate evidence.</p>
             </div>
           </article>
           <article>
             <span>03</span>
             <div>
               <h3>LLM summaries with guardrails</h3>
-              <p>Structured prompts produce JSON summaries, ticker exposure reasoning, limitations, and narrative context.</p>
+              <p>Structured prompts test whether LLMs can summarize articles, explain ticker exposure, and list limitations clearly.</p>
             </div>
           </article>
         </div>
@@ -179,22 +179,22 @@
         <div class="roadmap-grid">
           <article>
             <h3>Stronger source quality model</h3>
-            <p>Differentiate wires, primary filings, syndicated mirrors, blogs, and low-signal repost networks.</p>
+            <p>Better separate filings, original reporting, syndicated mirrors, blogs, and low-signal repost networks.</p>
           </article>
           <article>
             <h3>Sharper narrative conviction</h3>
-            <p>Add a base-case market read with explicit conviction instead of hiding behind neutral wording.</p>
+            <p>Make the project clearer about whether a narrative looks strong, weak, mixed, or too uncertain.</p>
           </article>
           <article>
             <h3>Deployment polish</h3>
-            <p>Package the API, frontend, scheduler, and data refresh path for a reliable public demo.</p>
+            <p>Clean up the API, frontend, scheduler, and refresh path so the project can become a reliable public demo.</p>
           </article>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>MarketPulse AI is an unfinished portfolio prototype. It is for product and engineering demonstration only.</p>
+      <p>MarketPulse AI is an unfinished student project. It is for learning and portfolio demonstration only.</p>
       <a href="#top">Back to top</a>
     </footer>
   </body>

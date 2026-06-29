@@ -1,15 +1,26 @@
 # MarketPulse AI Portfolio Page
 
-Static GitHub Pages site for MarketPulse AI, a work-in-progress financial news intelligence prototype.
+This is a small public page for MarketPulse AI, an independent project where I am learning how to use Python, APIs, local data storage, and AI summaries to work with market news.
 
-MarketPulse is designed to rank market-moving articles, detect developing narratives, map direct and second-order ticker exposure, and reduce duplicate syndicated-news noise.
+The full backend is not in this repository. I am keeping the main project private while it is still changing quickly and while I make sure no local data, API keys, or unfinished files are exposed.
 
-This repository contains only the public portfolio page. It does not include the unfinished backend, local database, API keys, or ingestion pipeline.
+## What MarketPulse AI explores
 
-## Publish
+- Collecting market and business news from RSS feeds, GDELT, SEC EDGAR, and optional API providers
+- Storing articles locally so they can be searched and ranked
+- Grouping related articles into market narratives
+- Ranking articles and narratives using recency, source quality, sentiment, market exposure, and article volume
+- Using OpenAI API experiments to summarize articles and explain why a story may matter
+- Building a React/Vite dashboard to make the information easier to inspect
 
-This repo is intended to be served with GitHub Pages from the root of the default branch.
+## Project status
+
+MarketPulse AI is an early prototype, not a polished investment product. I am using it to learn API integration, Python data processing, ranking logic, frontend development, and practical AI workflows.
+
+## Public page
+
+The static page in this repo is meant to give a clean overview of the project without exposing private project files or API keys. It can be served with GitHub Pages from the root of the default branch.
 
 ## Disclaimer
 
-MarketPulse AI is a portfolio prototype and is not financial advice.
+MarketPulse AI is for learning and portfolio demonstration only. It is not financial advice and should not be used to make investment decisions.
